@@ -11,6 +11,7 @@ Dependency's:
 - Hack : https://github.com/Prime-Script/prime-vangelico/tree/main/assets ( hacking folder )
 - Thermite game : https://github.com/pushkart2/memorygame
 
+- NPC code from : github.com/Lionh34rt
 - TO DO : replace the current FIB lift with this snippet in -- > qb-lift/config.lua
 ```    
     ["FIB"] = {
