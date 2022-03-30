@@ -9,14 +9,14 @@ local Loot2 = false
 local Loot3 = false
 local CurrentCops = 0
 local Buyer = nil
-local heistBlip = nil
+
 -- get all info on player Load to prevent exploiting 
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     TriggerServerEvent('nxte-FIB:server:SetInfoOnLoad')
 end)
 
 local function CallCops()
- -- vector3(139.4, -750.9, 265.25)
+ -- your code here 
 end
 
 local function OnHack1Done(success)
@@ -71,7 +71,7 @@ RegisterNetEvent('nxte-FIB:client:startheist',function()
                     TriggerServerEvent('nxte-FIB:server:SetActive', true)
                     Buyer = Player.source
                     TriggerEvent('animations:client:EmoteCommandStart', {"c"})
-                    QBCore.Functions.Notify('You paid $'..Config.JobPrice.. ' for the GPS location', 'success')
+                    QBCore.Functions.Notify('You paid $'..Config.JobPrice.. ' for the heist', 'success')
                     QBCore.Functions.Notify("Go to the 47th floor to hack the camera system")
                     TriggerServerEvent('nxte-FIB:server:removecash', Config.JobPrice)
                 else 
