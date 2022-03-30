@@ -2,7 +2,7 @@
 
  Free open-source FIB heist easy to adjust to your server with the config.lua
  
-- preview :
+- preview : https://youtu.be/JO3LpbQ50_I
  
 Dependency's:
 - qb-lift
