@@ -12,7 +12,8 @@ Dependency's:
 - Thermite game : https://github.com/pushkart2/memorygame
 
 - TO DO : replace the current FIB lift with this snippet in -- > qb-lift/config.lua
-```    ["FIB"] = {
+```    
+    ["FIB"] = {
         Group = {},                                                      
         Sound = "liftSoundBellRing",                                                
         Name = "FIB Lift",
