@@ -36,7 +36,7 @@ end)
 
 -- send door hack status to client
 RegisterNetEvent('nxte-FIB:server:SetDoorHack', function(hackstatus)
-    DoorHack = hackstatus
+    Hack3 = hackstatus
     TriggerClientEvent('nxte-FIB:client:SetDoorHack',-1, hackstatus)
 end)
 
