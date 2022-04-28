@@ -447,7 +447,7 @@ end)
 
 -- get Door Hack status
 RegisterNetEvent('nxte-FIB:client:SetDoorHack', function(status)
-    DoorHack = status
+    Hack3 = status
 end)
 
 -- get loot 1 status 
