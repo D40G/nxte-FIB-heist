@@ -335,6 +335,7 @@ RegisterNetEvent('nxte-FIB:client:StartLoot1', function()
     if isActive then
         if Hack3 then
             if not Loot1 then
+                TriggerServerEvent('nxte-FIB:server:SetLoot1', true)
                 TriggerEvent('animations:client:EmoteCommandStart', {"medic"})
                 QBCore.Functions.Progressbar("loot", "Grabbing Loot", 5000, false, true, {
                     disableMovement = true,
@@ -343,7 +344,6 @@ RegisterNetEvent('nxte-FIB:client:StartLoot1', function()
                     disableCombat = true,
                 }, {}, {}, {}, function() -- Done
                     TriggerEvent('animations:client:EmoteCommandStart', {"c"})
-                    TriggerServerEvent('nxte-FIB:server:SetLoot1', true)
                     TriggerServerEvent('QBCore:Server:AddItem', Config.Loot1item, Config.Loot1count, slot, info)
                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items[Config.Loot1item], 'add', Config.Loot1count)
                 end, function() -- Cancel
@@ -366,6 +366,7 @@ RegisterNetEvent('nxte-FIB:client:StartLoot2', function()
     if isActive then
         if Hack3 then
             if not Loot2 then
+                TriggerServerEvent('nxte-FIB:server:SetLoot2', true)
                 TriggerEvent('animations:client:EmoteCommandStart', {"medic"})
                 QBCore.Functions.Progressbar("loot", "Grabbing Loot", 5000, false, true, {
                     disableMovement = true,
@@ -374,7 +375,6 @@ RegisterNetEvent('nxte-FIB:client:StartLoot2', function()
                     disableCombat = true,
                 }, {}, {}, {}, function() -- Done
                     TriggerEvent('animations:client:EmoteCommandStart', {"c"})
-                    TriggerServerEvent('nxte-FIB:server:SetLoot2', true)
                     TriggerServerEvent('QBCore:Server:AddItem', Config.Loot2item, Config.Loot2count, slot, info)
                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items[Config.Loot2item], 'add', Config.Loot2count)
                 end, function() -- Cancel
@@ -397,6 +397,7 @@ RegisterNetEvent('nxte-FIB:client:StartLoot3', function()
     if isActive then
         if Hack3 then
             if not Loot3 then
+                TriggerServerEvent('nxte-FIB:server:SetLoot3', true)
                 TriggerEvent('animations:client:EmoteCommandStart', {"medic"})
                 QBCore.Functions.Progressbar("loot", "Grabbing Loot", 5000, false, true, {
                     disableMovement = true,
@@ -405,7 +406,6 @@ RegisterNetEvent('nxte-FIB:client:StartLoot3', function()
                     disableCombat = true,
                 }, {}, {}, {}, function() -- Done
                     TriggerEvent('animations:client:EmoteCommandStart', {"c"})
-                    TriggerServerEvent('nxte-FIB:server:SetLoot3', true)
                     TriggerServerEvent('QBCore:Server:AddItem', Config.Loot3itemA, Config.Loot3countA, slot, info)
                     TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items[Config.Loot3itemA], 'add', Config.Loot3countA)
                     Citizen.Wait(1000)
